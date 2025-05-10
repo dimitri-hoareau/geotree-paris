@@ -4,4 +4,4 @@ from .models import Tree
 
 @admin.register(Tree)
 class TreeAdmin(GISModelAdmin):
-    list_display = ('name', 'location')
+    list_display = ('tree_type', 'location', 'created_at')
