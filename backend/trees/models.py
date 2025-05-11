@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 class Tree(models.Model):
     """Model for individual trees (oaks and pines)"""
     TREE_TYPES = [
-        ('quercus', 'Oak'),
-        ('pinus', 'Pine'),
+        ('Quercus', 'Oak'),
+        ('Pinus', 'Pine'),
     ]
     tree_type = models.CharField("Tree type", max_length=10, choices=TREE_TYPES)
     location = models.PointField("Location", srid=4326)
