@@ -31,18 +31,20 @@ onMounted(() => {
 </script>
 
 <style scoped>
+  .map-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.map-container {
-  width: 1200px; 
-  height: 600px;
-  margin: 0 auto; 
-  max-width: 100%; 
-}
-
-.map {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+  .map {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--space-2);
+    box-shadow: 0 var(--space-1) var(--space-3) rgba(0, 0, 0, 0.1);
+  }
 </style>
